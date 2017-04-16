@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollowUpWebApp", "FollowUpWebApp\FollowUpWebApp.csproj", "{D3B9936F-1AC6-4E80-BC91-952F664B5F4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollowUpWebApp.Tests", "FollowUpWebApp.Tests\FollowUpWebApp.Tests.csproj", "{E86F7EBC-5B92-419B-A8E4-40147E966C17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3B9936F-1AC6-4E80-BC91-952F664B5F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B9936F-1AC6-4E80-BC91-952F664B5F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B9936F-1AC6-4E80-BC91-952F664B5F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B9936F-1AC6-4E80-BC91-952F664B5F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E86F7EBC-5B92-419B-A8E4-40147E966C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86F7EBC-5B92-419B-A8E4-40147E966C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86F7EBC-5B92-419B-A8E4-40147E966C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E86F7EBC-5B92-419B-A8E4-40147E966C17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
