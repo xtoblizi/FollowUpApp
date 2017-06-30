@@ -1,0 +1,34 @@
+﻿@model FollowUpWebApp.ViewModel.AttendanceVm
+
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+<br />
+<br />
+ 
+<h2>@ViewBag.Message</h2>
+<table>
+
+
+    @using (Html.BeginForm("Index", "Attendance", FormMethod.Post))
+    {
+        for (int i = 0; i < Model.MemberLists.Count; i++)
+        {
+            <tr>
+                <td>
+                    @Html.CheckBoxFor(m => Model.MemberLists[i].IsPresent)
+                    @Model.MemberLists[i].FullName
+
+                    @Html.HiddenFor(m => Model.MemberLists[i].FullName)
+                    @Html.HiddenFor(m => Model.MemberLists[i].MemberId)
+                    @Html.HiddenFor(m => Model.MemberLists[i].Id)
+                </td>
+            </tr>
+
+        }
+
+    <input type="submit" value="Create" class="btn btn-default" />
+
+    }
+</table>

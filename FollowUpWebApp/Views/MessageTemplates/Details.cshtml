@@ -1,0 +1,34 @@
+﻿@model FollowUpWebApp.Models.MessageTemplate
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MessageTemplate</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MessagingType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MessagingType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MessageBody)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MessageBody)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MessageTemplateId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

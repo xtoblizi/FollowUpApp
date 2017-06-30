@@ -1,0 +1,72 @@
+﻿@model FollowUpWebApp.Models.ChurchData
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ChurchData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ParishName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParishName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChurchStreetNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurchStreetNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChurchStreetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurchStreetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChurchTown)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurchTown)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChurchState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurchState)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.ChurchPostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurchPostalCode)
+        </dd>*@
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

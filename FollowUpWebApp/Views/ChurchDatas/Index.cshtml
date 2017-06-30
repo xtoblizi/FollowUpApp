@@ -1,0 +1,63 @@
+﻿@model IEnumerable<FollowUpWebApp.Models.ChurchData>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ParishName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChurchStreetNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChurchStreetName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChurchTown)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChurchState)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.ChurchPostalCode)
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParishName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChurchStreetNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChurchStreetName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChurchTown)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChurchState)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.ChurchPostalCode)
+        </td>*@
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ChurchDataId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ChurchDataId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ChurchDataId })
+        </td>
+    </tr>
+}
+
+</table>

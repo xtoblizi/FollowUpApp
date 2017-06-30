@@ -64,6 +64,8 @@ namespace FollowUpWebApp.Models
 
     public class RegisterViewModel
     {
+        public int MemberId { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

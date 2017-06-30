@@ -1,0 +1,66 @@
+﻿@model FollowUpWebApp.Models.ChurchData
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ChurchData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ParishName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParishName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChurchStreetNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurchStreetNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChurchStreetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurchStreetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChurchTown)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurchTown)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChurchState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurchState)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.ChurchPostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurchPostalCode)
+        </dd>*@
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ChurchDataId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

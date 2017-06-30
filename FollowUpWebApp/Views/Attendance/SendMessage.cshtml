@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "SendMessage";
+}
+
+<h2>Send Message</h2>
+<h2>@ViewBag.Message</h2>
+
+<p><a href="@Url.Action("SendBirthdayMessage", "Attendance")">Send Birthday Message</a></p>
+<p><a href="@Url.Action("SendFirstTimerMessage", "Attendance")">Send First Timer Message</a></p>
+<p><a href="@Url.Action("SendSecondTimerMessage", "Attendance")">Send Second Timer Message</a></p>
+<p><a href="@Url.Action("SendThirdTimerMessage", "Attendance")">Send Third Timer Message</a></p>
+<p><a href="@Url.Action("SendAttendanceMessage", "Attendance")">Send Absentee Message</a></p>
+
